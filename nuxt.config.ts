@@ -8,4 +8,15 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  app: {
+    baseURL: "/comment-reply/",
+    buildAssetsDir: "assets",
+  },
+
+  nitro: {
+    preset: "static",
+    prerender: {
+      ignore: [],
+    },
+  },
 });

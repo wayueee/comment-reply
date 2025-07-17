@@ -138,14 +138,6 @@ export default {
       const commentChild = comment.replies.find((item) => item.id === childId);
       if (commentChild && commentChild.votes > 0) commentChild.votes--;
     },
-    // upChild(childId, parentId, child2Id) {
-    //   const comment = this.comments.find((item) => item.id === parentId);
-    //   const commentChild = comment.replies.find((item) => item.id === childId);
-    //   const commentChild2 = commentChild.replies.find(
-    //     (item) => item.id === child2Id
-    //   );
-    //   console.log(commentChild2);
-    // },
     addReplyComent(id) {
       const replyComent = this.comments.find((item) => item.id === id);
       if (replyComent) replyComent.showReply = !replyComent.showReply;
